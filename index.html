@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cải tiến Giỏ Hàng Shopee</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Shopee | Giỏ Hàng (Bản Cải Tiến)</h1>
+        </div>
+    </header>
+
+    <main class="container cart-layout">
+        <!-- Cột trái: Danh sách sản phẩm -->
+        <section class="cart-items-section">
+            <div class="cart-header">
+                <span>Sản phẩm</span>
+                <span>Đơn giá</span>
+                <span>Số lượng</span>
+                <span>Số tiền</span>
+                <span>Thao tác</span>
+            </div>
+
+            <!-- Shop 1 -->
+            <div class="shop-group">
+                <h3 class="shop-name">Mall | Olay Chính Hãng</h3>
+                
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="https://via.placeholder.com/80" alt="Kem dưỡng Olay">
+                        <div>
+                            <h4>Kem Dưỡng Sáng Da Chống Nắng Olay</h4>
+                            <span class="price-drop">Giảm 24% so với lúc bỏ vào Giỏ hàng</span>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <del>1.099.000đ</del><br>
+                        <strong>784.900đ</strong>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="1" min="1">
+                    </div>
+                    <div class="item-total">784.900đ</div>
+                    <div class="item-actions">
+                        <button class="btn-delete">Xóa</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shop 2 -->
+            <div class="shop-group">
+                <h3 class="shop-name">Mall | Garnier Official Store</h3>
+                
+                <div class="cart-item">
+                    <div class="item-info">
+                        <img src="https://via.placeholder.com/80" alt="Thuốc nhuộm tóc Garnier">
+                        <div>
+                            <h4>Kem Nhuộm Tóc Thời Trang Garnier</h4>
+                        </div>
+                    </div>
+                    <div class="item-price">
+                        <del>162.000đ</del><br>
+                        <strong>117.520đ</strong>
+                    </div>
+                    <div class="item-quantity">
+                        <input type="number" value="2" min="1">
+                    </div>
+                    <div class="item-total">235.040đ</div>
+                    <div class="item-actions">
+                        <button class="btn-delete">Xóa</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cột phải: Tóm tắt đơn hàng (Sticky) -->
+        <aside class="cart-summary-section">
+            <div class="summary-box">
+                <h3>Tóm tắt đơn hàng</h3>
+                <div class="summary-row">
+                    <span>Tổng tiền hàng:</span>
+                    <span>1.019.940đ</span>
+                </div>
+                <div class="summary-row">
+                    <span>Voucher giảm giá:</span>
+                    <span class="discount">- 50.000đ</span>
+                </div>
+                <hr>
+                <div class="summary-row total-row">
+                    <span>Tổng thanh toán:</span>
+                    <span class="final-price">969.940đ</span>
+                </div>
+                <p class="vat-note">(Đã bao gồm VAT nếu có)</p>
+                <button class="btn-checkout">Mua Hàng (3)</button>
+            </div>
+        </aside>
+    </main>
+</body>
+</html>
